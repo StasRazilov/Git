@@ -1,0 +1,31 @@
+<?php
+declare(strict_types=1);
+
+////////////      <!-- Stas Razilov  -->     ////////////////////
+//Procedure that receives an array of student grades, 
+//calculates and returns an average and a maximum score
+function StudentsScores(array $Scores,int &$max,int &$average)
+{
+	$sum=0;
+	$sizeArrScores=count($Scores); // Number of organs in the array
+
+	for($i=0;$i<$sizeArrScores;$i++)
+	{
+		$sum+=$Scores[$i]; //Summarize the organs
+		if($Scores[$i]>$max)
+		{
+			$max=$Scores[$i];
+		}
+	}
+  
+	$average=$sum/$sizeArrScores; //From a mean score
+}
+
+$max=0;
+$average=0;
+$Scores = array (77,11,22,3,65,4,99,57);
+StudentsScores($Scores,$max,$average);
+
+echo "<br><br>average=".$average."<br><br>max=".$max;
+   
+?>

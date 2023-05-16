@@ -1,0 +1,26 @@
+<?php
+define("FileName","text_binary.txt");
+
+function makeHex($st)
+{
+	for($i=0;$i<strlen($st);$i++)
+	{
+		$hex[]=sprintf("%c",ord($st[$i]));
+	}
+	return join(" ",$hex);	
+}
+
+$f=fopen(FileName,"rb");
+echo makeHex(fgets($f,100));
+fclose($f);
+$f=fopen(FileName,"rt");
+echo makeHex(fgets($f,100)),"<br>";
+fclose($f); 
+ 
+
+?>
+
+
+
+
+

@@ -1,0 +1,24 @@
+<?php
+declare(strict_types=1);
+
+////////////          <!-- Stas Razilov  -->              ////////////////////
+//Which accepts two parameters and exchanges content of variables between them. 
+//If the second parameter is not passed.
+//a function sets the second parameter as "Hello world" string.
+function swap1(&$str1,&$str2="Hello world") 
+{
+	echo "before function swap<br>str1 = ".$str1."<br>str2 = ".$str2."<br><br><br>";
+	$temp=$str1;
+	$str1=$str2;
+	$str2=$temp;
+	echo "after function swap<br>str1 =".$str1."<br>str2 = ".$str2."<br><br><br>";
+
+}
+$str1='aaa';
+$str2='bbb';
+
+swap1($str1,$str2);
+
+swap1($str1);
+ 
+?>

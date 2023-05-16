@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Here Is Your URL!</title>
+    <style>
+    table, th, td {
+    border:1px solid black;
+    }
+
+    body
+    {
+        text-align: center;
+
+        background-color:  #D1EEEE;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed; /* remove this line */
+        min-height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+
+    }
+
+
+    </style>
+</head>
+<body>
+<h1>יום אחד היה מזג האוויר</h1>
+
+
+
+
+<br><br><br>
+<table style="width:100%">
+     <tr>
+    {% for day in jsonfile %}
+    <th>{{day}}</th>
+    {% endfor %}
+    </tr>
+
+
+
+
+  <tr>
+    {% for day in jsonfile %}
+    <td>{{jsonfile[day]["max_temp"]}} </td>
+    {% endfor %}
+  </tr>
+
+  <tr>
+    {% for day in jsonfile %}
+    <td>{{jsonfile[day]["min_temp"]}}</td>
+    {% endfor %}
+  </tr>
+
+  <tr>
+    {% for day in jsonfile %}
+    <td>{{jsonfile[day]["humidity"]}}</td>
+    {% endfor %}
+  </tr>
+
+</table>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+﻿  Source.c
+c:\users\אימן אני אוהב אותךךך\desktop\פרויקט סמסטרילי\פרוייקט סופיפרוייקט סופי\project1\project1\source.c(31): warning C4013: 'gets' undefined; assuming extern returning int
+c:\users\אימן אני אוהב אותךךך\desktop\פרויקט סמסטרילי\פרוייקט סופיפרוייקט סופי\project1\project1\source.c(9): warning C4101: 'group': unreferenced local variable
+  set.c
+  Generating Code...
+  Project1.vcxproj -> C:\Users\אימן אני אוהב אותךךך\Desktop\פרויקט סמסטרילי\פרוייקט סופיפרוייקט סופי\Project1\Debug\Project1.exe

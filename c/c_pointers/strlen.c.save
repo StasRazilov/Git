@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <assert.h>
+ 
+int size_String(char *str)
+{
+    int count=0;
+    for(;str[count]!='\0';count++);
+    assert(count);
+    return count; 
+}
+ 
+int main()
+{
+    char string1[] = "aaaa";
+  
+    int size_str=size_String(string1);
+   
+    printf("strlen is: %d \n", size_str);
+    scanf("%s", string1);
+ 
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <assert.h>
+ 
+int size_String(char *str)
+{
+    int count=0;
+    for(;str[count]!='\0';count++);
+    assert(count);
+    return count; 
+}
+ 
+int main()
+{
+    char string1[] = "";
+  
+    int size_str=size_String(string1);
+   
+    printf("strlen is: %d \n", size_str);
+        int size_str=size_String(string1);
+
+    	
+    return 0;
+}

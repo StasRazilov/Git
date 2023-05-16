@@ -1,0 +1,16 @@
+<?php
+declare(strict_types=1);
+
+////////////      <!-- Stas Razilov  -->      ////////////////////
+//A function that replaces the contents of a variable passed as
+//a parameter in the "Hello world" string.
+function func14(int &$x)
+{
+	$x="Hello world"; 
+}
+
+$ivar=1;
+func14($ivar);
+echo  $ivar;  
+   
+?>

@@ -1,0 +1,11 @@
+#!/bin/sh
+#stas razilov
+
+
+
+x=deta
+b=$(date -d "$a 10 min" "+%Y-%m-%d %H:%M:%S")
+
+
+echo Entered Date is $a
+echo Second Date is $b

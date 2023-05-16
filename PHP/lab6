@@ -1,0 +1,23 @@
+<!-- Stas Razilov  -->
+
+
+
+
+<?php
+     $a=array(1,2,3);
+
+     foreach($a as $k=>&$v)
+     {
+	     $v*=2;//Multiplier by 2
+     }
+
+     echo "<pre>";
+     print_r($a);
+     echo "</pre>";
+      
+
+?>
+
+
+
+

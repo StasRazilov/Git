@@ -1,0 +1,23 @@
+/*styles*/
+
+body
+{
+    display: center;
+    align-items: center;
+    justify-content: center;
+    background-color:azure;
+	font-family:  Calibri;
+}
+
+.s1
+{
+	color:blue;
+	font-family:  Calibri;
+	font-size:20px;
+}
+
+.error1
+{
+	color:red;
+	font-size:30px;
+}

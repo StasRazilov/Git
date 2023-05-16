@@ -1,0 +1,37 @@
+<!-- Stas Razilov  -->
+ 
+ 
+
+<?php
+
+$matrix=array(array(1,1,1,1,0,5,6,1),array(1,0,1,1,4,5,6,0,),array(1,0,1,1,4,5,6,0));
+
+for($i=0;$i<count($matrix);$i++)//Prints a matrix
+{		
+	for($j=0;$j<count($matrix[$i]);$j++)
+	{ 
+	  echo $matrix[$i][$j]."  ";             
+	}
+	echo  "<br>";		
+}	
+echo  "<br><br>";		 
+
+ 
+for($i=0;$i<count($matrix);$i++)
+{		
+	for($j=0;$j<count($matrix[$i]);$j++)
+	{
+		if($matrix[$i][$j]==0)
+		{
+		    echo 'find a zero element in the matrix '.$i." - ".$j."<br>";
+            break(1);//  Only one line jumps		
+		}       
+    }	
+}
+ 
+
+?>
+
+
+?>
+

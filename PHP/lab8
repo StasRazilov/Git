@@ -1,0 +1,13 @@
+<!-- Stas Razilov  -->
+<?php  
+
+     //calculating numbers in serie 1 2 4 7 11 16 22 29 37...   Until it reaches n=120
+     for($i=1,$sum=1,$num=1; $num+$i < 120;$i++) 
+     {
+	     echo $num."  ";
+	     $sum+=$num+$i;
+	     $num+=$i;
+     }
+     echo ("<br>sum = ".$sum." ");//  final  $sum
+?>
+ 

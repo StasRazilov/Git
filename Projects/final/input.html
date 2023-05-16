@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Make A Short URL</title>
+    <style>
+
+    body
+    {
+        text-align: center;
+
+        background-color:  #D1EEEE;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed; /* remove this line */
+        min-height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+
+    }
+
+
+
+    label
+    {
+        font-size: 25px;
+    }
+
+    input
+    {
+        border: none;
+        outline: none;
+        font-size: 17px;
+
+        padding: 10px 10px;
+        border-radius:  20px;
+        text-align: right;
+        transition: all 0.3s ease;
+
+        background-color: #ffff;
+        width: 500px;
+    }
+
+
+    .btn
+    {
+        width: 25%;
+        padding: 7px 2px;
+        font-size: 25px;
+        border: 0px;
+        background:#3ca0e7;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 3px;
+        outline: none; float: center;
+    }
+
+
+    .btn:hover
+    {
+        background: #7AC5CD;
+    }
+    </style>
+</head>
+<body>
+<h1>יום אחד היה מזג האוויר</h1>
+<form action="shortenurl">
+    <br><br>
+    <label for="city">Enter your city</label>
+    <br><br>
+    <input type="text" name="CITY" required>
+    <br><br><br>
+
+    <button   class="btn" name="submit"> Submit </button>
+
+
+</form>
+
+</body>
+</html>

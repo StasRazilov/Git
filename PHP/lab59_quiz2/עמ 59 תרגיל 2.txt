@@ -1,0 +1,50 @@
+
+<?php
+	define("FileName", "C:\\xampp\\htdocs\\input.txt");
+
+	function readInputFile()
+	{
+		global $names;
+		$line = file_get_contents(FileName);
+		$names = explode("\n",$line); 
+		return;
+	}
+
+	function selectItems($items, $selected=0)
+	{
+		$text = "";
+		foreach ($items as $key => $value)
+		{
+			if ($key === $selected) 
+			{
+				$ch = "selected";	
+			}
+			else
+				$ch = "";
+			$text .= "<option$ch value='$key'>$value</option>\n";
+		}
+		return $text;
+	}
+
+	$names = array();
+	readInputFile();
+
+	if(isset($_POST['surname']))
+	{
+		$name = $names[$_POST['surname']];
+		echo "Selected:{$_POST['surname']},{$name}";
+	}
+?>
+
+<form action="<?= $_SERVER['SCRIPT_NAME']?>" method=post>
+	Your selection:
+	<select name="surname">
+		<?= selectItems($names, $_POST['surname'])?>
+	</select><br>
+	<input type=submit value="Click Here">
+</form>
+
+
+
+
+
